@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjh75h5vgobmk"]
+
+[ext_resource type="PackedScene" uid="uid://ckfv5hbdrvijb" path="res://Scenes/Player/player.tscn" id="2_4dogj"]
+[ext_resource type="Script" path="res://Scripts/map_generator.gd" id="3_7auy3"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_4dogj")]
+position = Vector2(24, 24)
+
+[node name="MapGenerator" type="Node" parent="."]
+script = ExtResource("3_7auy3")
